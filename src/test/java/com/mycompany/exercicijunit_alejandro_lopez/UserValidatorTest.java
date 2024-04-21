@@ -98,6 +98,14 @@ public class UserValidatorTest {
         boolean result = instance.validaDNI(dni);
         assertEquals(expResult, result);
     }
+        public void testValidaDNI7() {
+        System.out.println("validaDNI - Cas 7");
+        String dni = "afbemrut";
+        UserValidator instance = new UserValidator();
+        boolean expResult = false;
+        boolean result = instance.validaDNI(dni);
+        assertEquals(expResult, result);
+    }
 
     /**
      * Test of validaNIA method, of class UserValidator.
